@@ -22,6 +22,25 @@ a{
     color: white;
 }
 
+#hero h1{
+    font-size: 65px;
+    color: white;
+}
+
+#hero p{
+    color: white;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+section h1{
+    font-size: 65px;;
+}
+
+section p{
+    font-size: 30px;
+    margin-top: 40px;
+}
 /*--------------------
         HEADER
 --------------------*/
@@ -65,17 +84,35 @@ header{
 /* hero */
 
 #hero{
+    min-height: 930px;
     display: flex;
     flex-direction: row;
-    background-color: #00008b;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/jumbo.png);
+    background-size: cover;
     padding: 2% 0;
 }
 
 #hero div{
-    background-color: #ee82ee;
-    min-width: 900px;
-    min-height: 300px;
-    margin: auto;
+    background-color: transparent;
+    max-width: 1080px;
+    max-height: 850px;
+    margin-bottom: 7%;
+}
+
+.hero-btn{
+    margin-top: 30px;
+    min-height: 60px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+#hero .black{
+    color: white;
+    background-color: #23272a;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /*--------------------
@@ -90,9 +127,10 @@ section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 1180px;
     min-height: 500px;
-    margin: auto;
+    
 }
 
 .second-section{
@@ -101,12 +139,12 @@ section{
 
 .section-container .w-65{
     width: 65%;
-    background-color: #1e90ff;
+    background-image: url(img/item1.svg);
+    background-size: cover;
 }
 
 .section-container .w-35{
     width: 35%;
-    background-color: #ffc0cb;
 }
 
 .last-section{
@@ -184,5 +222,9 @@ button{
     font-size: 20px;
     font-weight: 550;
     color: #262a2d;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
